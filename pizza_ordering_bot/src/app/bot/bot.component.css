@@ -1,0 +1,227 @@
+#body{
+    background-image: url("../../assets/866650.jpg");
+    height: 600px;
+    width:auto;
+    background-position: center;
+    background-size: cover;
+    /* position:'relative'; */
+}
+h2{
+    color:black;
+    margin-left: 68%;
+    margin-top: 10px;
+    padding: 10px;
+}
+#chatbox{
+    border-radius: 15px;
+    padding: 10px;
+    width:400px;
+    height:500px;
+    margin-left: 63%;
+    margin-top:20px;
+    background-color: #eeeded;
+    background-size: 320px 500px;
+
+}
+
+.bot{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+}
+
+#header{
+    padding: 2px;
+    background-color: teal;
+}
+
+#header>span{
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#input-send{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px ;
+}
+
+#input-send div:nth-of-type(1) {flex-grow: 7;}
+#input-send div:nth-of-type(2) {flex-grow: 1;}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid teal;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #eeeded;
+}
+
+input[type=text]:focus {
+    outline-color: rgb(63, 107, 110);
+}
+
+.send:hover{
+    cursor: pointer;
+}
+.send:focus {
+    outline: none;
+}
+.send{
+    padding: 4px 5px;
+    color:teal;
+    border: none;
+    background-color: #eeeded;
+}
+
+.bot-message{
+    background-color: rgb(13, 150, 150);
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    min-width: 185px;
+    max-width: 300px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #eeeded;
+    border-bottom: 0px solid transparent;
+}
+
+.user-message{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color:lightgray;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 150px;
+    min-width: 200px;
+    /* max-width: 300px; */
+    text-align:left;
+    border-top: 0px solid transparent;
+    border-right: 10px solid #eeeded;
+    border-bottom: 10px solid transparent;
+}
+
+.order-pizza,.check-status,.cancel-order{
+  border : 2px solid teal;
+  border-radius: 3px;
+  margin :2px;
+  font-size: 15px ;
+}
+
+.order-pizza:hover,.check-status:hover,.cancel-order:hover{
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+}
+.order-pizza:focus,.check-status:focus,.cancel-order:focus {
+  outline: none;
+}
+
+.cancel-order{
+  width: 205px;
+}
+
+.order-pizza,.check-status{
+  margin-top: 10px;
+  width:100px;
+}
+
+
+ #message {
+    padding:5px; 
+    height:380px;
+    overflow-y:scroll;
+  }
+  
+  #message::-webkit-scrollbar-track
+  {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+  }
+  
+  #message::-webkit-scrollbar
+  {
+      width: 5px;  
+      background-color: #F5F5F5;
+  }
+  
+  #message::-webkit-scrollbar-thumb
+  {
+      background-color: teal;
+  }
+  
+  @media only screen and (max-width: 500px) {
+     #message {
+          height:40vh;
+      }
+  }
+
+
+
+  #typing-indicator {
+    background-color: teal;
+    width: auto;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #eeeded;
+    border-bottom: 0px solid transparent;
+    padding: 10px;
+    display: table;
+    margin-top: 10px;
+    position: relative;
+    -webkit-animation: 2s bulge infinite ease-out;
+            animation: 2s bulge infinite ease-out;
+  }
+  
+  #typing-indicator span {
+    height: 8px;
+    width: 8px;
+    float: left;
+    margin: 0 1.3px;
+    background-color: #9E9EA1;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  #typing-indicator span:nth-of-type(1) {
+    -webkit-animation: 1s blink infinite 0.3333s;
+            animation: 1s blink infinite 0.3333s;
+  }
+  #typing-indicator span:nth-of-type(2) {
+    -webkit-animation: 1s blink infinite 0.6666s;
+            animation: 1s blink infinite 0.6666s;
+  }
+  #typing-indicator span:nth-of-type(3) {
+    -webkit-animation: 1s blink infinite 0.9999s;
+            animation: 1s blink infinite 0.9999s;
+  }
+  
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes bulge {
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }
+  @keyframes bulge {
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }

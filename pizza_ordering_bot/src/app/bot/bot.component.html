@@ -1,0 +1,25 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div id='body'>
+
+    <h2>Have fun with chatbot!</h2>
+    <div id='chatbox'>
+        <div id='header'><img src="../../assets/bot.png" alt="bot" class="bot"><span>Bot</span></div>
+
+        
+        <div id="message">
+            <!-- <div id="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->            
+        </div>
+        
+        <div id='input-send'>
+            <div><input #myInput type="text" id="form__input" placeholder="send message here"/></div>
+            <div><button (click)="message(myInput.value)" class="send" id="send-button"><i class="material-icons">&#xe163;</i></button>
+            </div>
+        </div> 
+        
+    </div>
+</div>
